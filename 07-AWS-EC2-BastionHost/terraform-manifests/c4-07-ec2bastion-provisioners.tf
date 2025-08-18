@@ -8,6 +8,7 @@ resource "null_resource" "copy_ec2_keys" {
     user     = "ec2-user"
     password = ""
     private_key = file("private-key/eks-terraform-key.pem")
+    
   }  
 
 ## File Provisioner: Copies the terraform-key.pem file to /tmp/terraform-key.pem
